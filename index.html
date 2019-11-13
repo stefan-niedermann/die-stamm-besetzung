@@ -23,24 +23,33 @@
                 height: 100vh;
             }
 
-            header, main {
+            header,
+            main {
                 overflow-y: auto;
                 display: flex;
             }
 
             img {
                 max-width: 70%;
+                max-height: 100vh;
             }
 
             header {
                 flex: 1 1 auto;
                 align-items: center;
+                justify-content: center;
             }
 
             main {
                 flex: 1 0 60%;
                 flex-direction: column;
                 justify-content: space-around;
+                color: #fff;
+                background-color: #000;
+            }
+
+            main .btn-flat {
+                color: #fff;
             }
         }
     </style>
@@ -53,16 +62,16 @@
     <header class="section center">
         <h1><img src="./img/favicon.jpg" alt="Die Stamm Besetzung"></h1>
     </header>
-    <main class="black white-text">
+    <main>
         <section class="flow-text">
             <div class="container">
-            <p>Ehemalige Schüler der Theatergruppe der Herrmann-Stamm-Realschule finden sich zusammen, um euch ein weiteres Mal auf der Bühne zu begeistern.</p>
-        </div>
+                <p>Ehemalige Schüler der Theatergruppe der Herrmann-Stamm-Realschule finden sich zusammen, um euch ein
+                    weiteres Mal auf der Bühne zu begeistern.</p>
+            </div>
         </section>
         <footer>
             <div class="container">
-                <a href="impressum-und-datenschutzerklaerung.html"
-                    class="waves-effect btn-flat white-text right"><i
+                <a href="impressum-und-datenschutzerklaerung.html" class="waves-effect btn-flat right"><i
                         class="material-icons left">info</i>Impressum und Datenschutzerklärung</a>
             </div>
         </footer>
