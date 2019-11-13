@@ -17,6 +17,32 @@
     <link rel="canonical" href="https://gasthaus-gundel.de/index.html" />
     <link rel="stylesheet" href="css/main.css" />
     <style type="text/css">
+        @media (min-width: 768px) {
+            body {
+                display: flex;
+                height: 100vh;
+            }
+
+            header, main {
+                overflow-y: auto;
+                display: flex;
+            }
+
+            img {
+                max-width: 70%;
+            }
+
+            header {
+                flex: 1 1 auto;
+                align-items: center;
+            }
+
+            main {
+                flex: 1 0 60%;
+                flex-direction: column;
+                justify-content: space-around;
+            }
+        }
     </style>
 
     <script defer type="text/javascript" src="js/materialize-1.0.0.min.js"></script>
@@ -25,21 +51,22 @@
 
 <body>
     <header class="section center">
-        <h1 class="brand">
-            <span>die</span>
-            <span>Stamm</span>
-            <span>Besetzung</span>
-        </h1>
+        <h1><img src="./img/favicon.jpg" alt="Die Stamm Besetzung"></h1>
     </header>
-    <footer class="page-footer black darken-1 white-text">
-        <div class="container">
-            <h5>Info</h5>
-            <ul>
-                <li><a href="impressum-und-datenschutzerklaerung.html" class="waves-effect btn-flat white-text"><i
-                            class="material-icons left">info</i>Impressum und Datenschutzerklärung</a></li>
-            </ul>
+    <main class="black white-text">
+        <section class="flow-text">
+            <div class="container">
+            <p>Ehemalige Schüler der Theatergruppe der Herrmann-Stamm-Realschule finden sich zusammen, um euch ein weiteres Mal auf der Bühne zu begeistern.</p>
         </div>
-    </footer>
+        </section>
+        <footer>
+            <div class="container">
+                <a href="impressum-und-datenschutzerklaerung.html"
+                    class="waves-effect btn-flat white-text right"><i
+                        class="material-icons left">info</i>Impressum und Datenschutzerklärung</a>
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>
