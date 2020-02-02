@@ -7,6 +7,7 @@ deploy_job:
   script:
     - rm .gitlab-ci.yml
     - rm -rf .git
+    - rm -rf resources
     - apt-get update
     - apt-get --yes --force-yes install imagemagick lftp
     - find ./img -name '*.jpg' -exec mogrify -resize 1920x1920 -quality 35\> {} \;
