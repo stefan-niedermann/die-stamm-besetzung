@@ -49,13 +49,42 @@
             main {
                 flex: 1 0 60%;
                 flex-direction: column;
-                justify-content: space-around;
                 color: #fff;
                 background-color: #000;
             }
 
             main .btn-flat {
                 color: #fff;
+            }
+
+            .collapsible,
+            .collapsible-header,
+            .collapsible-body {
+                border: 0;
+            }
+            .collapsible-header {
+                color: #fff;
+                background-color: transparent;
+            }
+
+            body.keyboard-focused .collapsible-header:focus {
+                background-color: #333;
+            }
+        }
+
+        .actors {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .actors>* {
+            flex: 1 0 calc(50% - 2rem);
+        }
+
+        @media (min-width: 600px) {
+            .actors>* {
+                flex: 1 0 25%;
+                margin-bottom: 4rem;
             }
         }
     </style>
@@ -89,6 +118,62 @@
             <div class="container">
                 <p>Ehemalige Schüler der Theatergruppe der Herrmann-Stamm-Realschule finden sich zusammen, um euch ein
                     weiteres Mal auf der Bühne zu begeistern.</p>
+            </div>
+        </section>
+        <section class="flow-text">
+            <div class="container">
+                <ul class="collapsible">
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">theaters</i>Produktionen</div>
+                        <div class="collapsible-body">
+                            <h2>Mord in Queen's Garden</h2>
+                            <blockquote
+                                cite="https://www.theaterboerse.de/verlag/theaterstuecke/genre-kriminalstuecke/1112-mord-in-queens-garden.html">
+                                <p> In einem englischem Landhotel begrüßt die Besitzerin eine Schar von Gästen, die sich
+                                    scheinbar fremd sind, aber alle irgendwie mit Mr. Cool zusammenhängen, der die
+                                    teuerste Suite gemietet hat. Bei einem Stromausfall überlebt einer der Gäste die
+                                    Dunkelheit nicht. Doch zum Glück gibt es ja Inspektor Lanlay, seine Assistenten und
+                                    viele Verdächtige...</p>
+                            </blockquote>
+                            <h3>Aufführungen</h3>
+                            <ul>
+                                <li><time datetime="2020-02-28T19:00">Samstag, 28. Februar 2020</time></li>
+                                <li><time datetime="2020-02-29T19:00">Sonntag, 29. Februar 2020</time></li>
+                                <li><time datetime="2020-03-03T19:00">Freitag, 3. März 2020</time></li>
+                                <li><time datetime="2020-03-04T19:00">Samstag, 4. März 2020</time></li>
+                            </ul>
+                            <h3>Tickets</h3>
+                            <p></p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collapsible-header"><i class="material-icons">people</i>Besetzung</div>
+                        <div class="collapsible-body">
+                            <div class="actors">
+                                <img src="./img/actors/IMG_7189.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7195.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7214.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7186.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7200.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7217.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7212.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7210.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7203.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7193.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7215.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7218.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7208.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7194.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7184.JPG" alt="" class="materialboxed" />
+                                <img src="./img/actors/IMG_7188.JPG" alt="" class="materialboxed" />
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="flow-text">
+            <div class="container">
                 <p>Mit Schülern der Abschlussjahrgänge von 2005 bis 2018 befördern wir sie unter Anleitung unseres
                     ehemaligen Lehrers in eine phantasievolle Welt.</p>
             </div>

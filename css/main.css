@@ -1,7 +1,6 @@
 /* Materialize CSS */
 
 @import url(materialize-1.0.0.min.css);
-
 /* Main font */
 
 @font-face {
@@ -49,13 +48,23 @@ img {
     height: auto;
 }
 
+blockquote {
+    margin-left: -1rem;
+    padding-left: 1rem;
+    border-left-color: #ccc;
+}
+
+.collapsible-header i {
+    align-self: center;
+}
+
 .brand {
     display: inline-flex;
     text-transform: uppercase;
     color: #808080;
 }
-.brand span:first-child,
-.brand span:last-child {
+
+.brand span:first-child, .brand span:last-child {
     text-transform: lowercase;
     color: #000;
 }
