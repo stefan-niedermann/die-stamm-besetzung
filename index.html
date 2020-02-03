@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#000000" />
     <meta name="robots" content="index, follow" />
     <meta name="description"
-        content="☎ Tel.: 09178 / 1503 - Lassen Sie sich verwöhnen mit fränkischen, griechischen und saisonalen Spezialitäten in gemütlichen Räumen" />
+        content="dieSTAMMbesetzung präsentiert Ihnen unterhaltsames Theater in Schwabch und Umgebung." />
 
     <base href="./" />
 
@@ -31,6 +31,26 @@
             margin: 0;
         }
 
+        footer a {
+            margin-bottom: 1rem;
+        }
+
+        .actors {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .actors>* {
+            flex: 1 0 calc(50% - 2rem);
+        }
+
+        @media (min-width: 600px) {
+            .actors>* {
+                flex: 1 0 25%;
+                margin-bottom: 4rem;
+            }
+        }
+
         @media (min-width: 601px) {
             body {
                 display: flex;
@@ -49,55 +69,23 @@
             }
 
             header {
-            filter: invert(1);
+                filter: invert(1);
                 flex: 1 1 auto;
                 align-items: center;
                 justify-content: center;
             }
 
+            header a {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-self: stretch;
+            }
+
             main {
                 flex: 1 0 60%;
                 flex-direction: column;
-<<<<<<< HEAD
-=======
-                color: #fff;
-                background-color: #000;
-            }
-
-            main .btn-flat {
-                color: #fff;
-                margin-bottom: 1.5rem;
-            }
-
-            .collapsible,
-            .collapsible-header,
-            .collapsible-body {
-                border: 0;
-            }
-            .collapsible-header {
-                color: #fff;
-                background-color: transparent;
-            }
-
-            body.keyboard-focused .collapsible-header:focus {
-                background-color: #333;
->>>>>>> 296ba56a506fdf5c919e0a8f7a1a93069a6d03ba
-            }
-        }
-
-        .actors {
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .actors>* {
-            flex: 1 0 calc(50% - 2rem);
-        }
-
-        @media (min-width: 600px) {
-            .actors>* {
-                flex: 1 0 25%;
-                margin-bottom: 4rem;
             }
         }
     </style>
@@ -124,7 +112,7 @@
 
 <body>
     <header class="white center">
-        <h1><img src="./img/favicon.jpg" alt="Die Stamm Besetzung"></h1>
+        <a href="./index.html"><h1><img src="./img/favicon.jpg" alt="Die Stamm Besetzung"></h1></a>
     </header>
     <main>
         <section class="flow-text">
@@ -137,7 +125,8 @@
             <div class="container">
                 <ul class="collapsible">
                     <li>
-                        <div class="collapsible-header"><i class="material-icons">theaters</i>Produktionen</div>
+                        <div class="collapsible-header"><i class="material-icons">theaters</i>Produktionen<span
+                                class="new badge black white-text" data-badge-caption="NEU"></span></div>
                         <div class="collapsible-body">
                             <h2>Mord in Queen's Garden</h2>
                             <blockquote
@@ -187,12 +176,12 @@
         </section>
         <!-- <iframe scrolling="no"
             src="https://www.openstreetmap.org/export/embed.html?bbox=10.990276336669922%2C49.317905006337135%2C11.046924591064455%2C49.34246080790859&amp;layer=mapnik"></iframe> -->
-        <footer>
+        <footer a>
             <div class="container">
                 <a href="impressum-und-datenschutzerklaerung.html" class="waves-effect btn-flat right"><i
                         class="material-icons left">info</i>Impressum und Datenschutzerklärung</a>
             </div>
-        </footer>
+        </footer a>
     </main>
 </body>
 

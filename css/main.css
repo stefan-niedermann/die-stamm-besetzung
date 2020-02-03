@@ -54,8 +54,16 @@ blockquote {
     border-left-color: #ccc;
 }
 
-.collapsible-header i {
-    align-self: center;
+.collapsible-header {
+    align-items: center;
+}
+
+.collapsible-body > :first-child {
+    margin-top: 0;
+}
+
+.collapsible-body > :last-child {
+    margin-bottom: 0;
 }
 
 .brand {
