@@ -54,6 +54,16 @@ blockquote {
     border-left-color: #ccc;
 }
 
+footer {
+    margin-top: 3rem;
+    transition: opacity .2s ease;
+    opacity: .8;
+}
+
+footer:hover {
+    opacity: 1;
+}
+
 .collapsible-header {
     align-items: center;
 }
