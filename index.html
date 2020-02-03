@@ -23,6 +23,14 @@
             border: 0;
         }
 
+        blockquote {
+            border-left: 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
         @media (min-width: 601px) {
             body {
                 display: flex;
@@ -41,6 +49,7 @@
             }
 
             header {
+            filter: invert(1);
                 flex: 1 1 auto;
                 align-items: center;
                 justify-content: center;
@@ -49,26 +58,6 @@
             main {
                 flex: 1 0 60%;
                 flex-direction: column;
-                color: #fff;
-                background-color: #000;
-            }
-
-            main .btn-flat {
-                color: #fff;
-            }
-
-            .collapsible,
-            .collapsible-header,
-            .collapsible-body {
-                border: 0;
-            }
-            .collapsible-header {
-                color: #fff;
-                background-color: transparent;
-            }
-
-            body.keyboard-focused .collapsible-header:focus {
-                background-color: #333;
             }
         }
 
@@ -110,7 +99,7 @@
 </head>
 
 <body>
-    <header class="section center">
+    <header class="white center">
         <h1><img src="./img/favicon.jpg" alt="Die Stamm Besetzung"></h1>
     </header>
     <main>
