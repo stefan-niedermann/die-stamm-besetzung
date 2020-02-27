@@ -43,6 +43,10 @@ body {
     font-family: 'Open Sans Condensed', Impact, "Franklin Gothic Bold", sans-serif;
 }
 
+a.btn-large {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
 img {
     max-width: 100%;
     height: auto;
@@ -68,11 +72,11 @@ footer:hover {
     align-items: center;
 }
 
-.collapsible-body > :first-child {
+.collapsible-body> :first-child {
     margin-top: 0;
 }
 
-.collapsible-body > :last-child {
+.collapsible-body> :last-child {
     margin-bottom: 0;
 }
 
